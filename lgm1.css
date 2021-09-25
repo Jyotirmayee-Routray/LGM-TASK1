@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box
+}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.tree{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+}
+li{
+    color: white;
+    display: inline;
+    font-size: 20px;
+    border: 2px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+ul{
+    padding-left: 100px;
+    margin-left: 100px;
+    text-align: right;
+}
+li:hover{
+    color:brown;
+
+}
+h3#slide{
+    color: white;
+    text-align: center;
+}
+h1#slide{
+    color:white;
+    padding-left: 250px;
+    text-align: left;
+}
+p#slide{
+    color: white;
+    padding-left: 250px;
+    padding-right: 200px;
+    text-align: left;
+}
+.first-btn{
+    padding-left: 380px;
+    padding-right: 100px;
+}
+#zero{
+    padding: 10px;
+    border: none;
+    background: violet;
+}
+#zero:hover{
+    background: yellow;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+.two{
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+}
+.umb{
+    padding-left: 400px;
+    font-size: 20px;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+}
+.four{
+    display: flex;
+    flex-direction: row;
+}
+.bell{
+    width: 30%;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+    border:50px;
+    
+}
+.mail{
+    width: 30%;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+    border:50px;
+    
+}
+.stack{
+    width: 30%;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+    border:50px;
+}
+h4{
+    font-weight: bold;
+    text-align: center;
+}
+img.five{
+    margin-right: 80px;
+    padding-right: 80px;
+    border-right: 80px;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-left: 30px;
+    float: none;
+    width: 100%;
+    height: 100px;
+}
+.para{
+    text-align: center;
+    font-size: 20px;
+}
+input[type=submit]{
+   padding-left: 30px;
+   margin-left: 50px;
+   margin-right: 30px;
+   padding-right: 50px;
+   border-left: 300px;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    background-color: black;
+    color: cornsilk;
+    margin-bottom: 30PX;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top:20px ;
+    border-bottom: 30px;
+}
+input[type=submit]:hover{
+    color: crimson;
+    background-color: gray;
+   
+}
+.project{
+    display: flex;
+    flex-direction:row;
+}
+.open{
+    display: flex;
+    flex-direction:column;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    border-top: solid 1px black;
+    padding-top: 100px;
+}
+h5{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+.open{
+    display: flex;
+    flex-direction: row;
+}
+.phone{
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid black;
+}
+img#phone{
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    float: none;
+    width: 80%;
+    height: 200px;
+}
+.book{
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid black;
+}
+img#book{
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    float: none;
+    width: 80%;
+    height: 200px;
+}
+.laptop{
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid black;
+}
+img#laptop{
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    float: none;
+    width: 80%;
+    height: 200px;
+}
+.newspaper{
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid black;
+}
+img#newspaper{
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    float: none;
+    width: 80%;
+    height: 200px
+}
+.phone:hover{
+    background-color: yellowgreen;
+}
+.laptop:hover{
+    background-color: yellowgreen;
+}
+.book:hover{
+    background-color: yellowgreen;
+}
+.newspaper:hover{
+    background-color: yellowgreen;
+}
+.pricing{
+    display: flex;
+    flex-direction:column;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+}
+h4{
+    font-size: 25px;
+    text-align: center;
+}
+.st{
+    font-size: 10px;
+    padding: 10px;
+    border: 10px;
+    border-right: 1px solid black;
+}
+.pr{
+    font-size: 10px;
+    padding: 10px;
+    border: 10px;
+    
+}
+.bu{
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid black;
+}
+button{
+    align-items: center;
+}
+.buy{
+    background-color: black;
+    color: white;
+}
+.buy:hover{
+    background-color: blue;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.eight{
+    background-color:purple;
+}
+video{
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+h3{
+    font-size:40px;
+    text-align: center;
+}
+.member{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+}
+img#team-one{
+    clip-path: circle(35.4% at 50% 48%);
+}
+h6{
+    margin-left: 70px;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    
+    
+}
+.team-one{
+    align-items: center;
+    width: 33%;
+}
+.team-two{
+    width: 33%;
+}
+.team-three{
+    width: 33%;
+}
+img#team-two{
+    clip-path: circle(35.4% at 50% 48%);
+}
+.life{
+    align-items: center;
+    background-color: lightgray;
+}
+#life{
+    align-items: center;
+    width: auto;
+    margin-left: 550px;
+}
+img#team-two:hover{
+   background-color: lightgray;
+}
+.sec-8 {
+    align-items: center;
+    width: 100%;
+    height: 440px;
+    background-image: url("boat.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .search_wrap {
+    display: flex;
+    gap: 0px;
+    
+  }
+  .search-box {
+    width: 100%;
+    padding-left: 200px;
+  }
+  .new{
+      width: 150%;
+      padding-left:300px;
+      padding-right: 0px;
+  }
+  .old{
+      padding-right: 400px;
+      padding-left: 0px;
+  }
+  .search-txt{
+      width: 200px;
+    height: 33px;
+    padding-left: 20px;
+    border-style: none;
+    width: 50%;
+  }
+  #sec8-btn {
+      height: 31px;
+      padding-left: 0px;
+    margin-top: 4px;
+    width: 100px;
+    background-color: rgb(163, 18, 247);
+    border-style: none;
+  }
+  .apple{
+      padding-left: 415px;
+      margin-left: 435px;
+      padding-top: 5px;
+      margin-top: 5px;
+  }
+  #sec-8-btn{
+    height: 31px;
+    padding-left: 0px;
+  margin-top: 4px;
+  width: 100px;
+    background-color: rgb(163, 18, 247);
+    border-style: none; 
+  }
+  #sec-8-btn:hover{
+      
+    background-color: rgb(215, 252, 7);
+    color: black;
+}
+#sec8-btn:hover {
+    background-color: rgb(215, 252, 7);
+    color: black;
+  }
+.blog{
+    display: flex;
+    flex-direction: column;
+}
+.blog_team{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.group1{
+    width: 33%;
+}
+.group2{
+    width: 33%;
+}
+.group3{
+    width: 33%;
+}
+img#group1{
+    align-items: center;
+    width: 100%;
+}
+button.blog{
+    color:white;
+    background-color: black;
+    align-items: center;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+
+}
+button.blog:hover{
+    background-color: blue;
+}
+.ten{
+  
+    display: flex;
+    flex-direction:row;
+}
+.map{
+align-items: center;
+    width:50%;
+}
+
+.contact{
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 20px;
+    background-color: yellowgreen;
+    width: 50%;
+}
+p#con{
+    text-align: left;
+}
+button#con{
+    background-color: purple;
+    width: 27%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+button#con:hover{
+background-color: white;
+color: black;
+}
+.eleven{
+    display: flex;
+    flex-direction: row;
+}
+.twist{
+    padding: 50px;
+    margin: 50px;
+    border: 50px;
+    width:33%;
+}
+.address{
+    margin: 50px;
+    border: 50px;
+    padding: 50px;
+    width: 33%;
+}
+.follow{
+    margin: 50px;
+    border: 50px;
+    padding: 50px;
+    width: 33%;
+}
